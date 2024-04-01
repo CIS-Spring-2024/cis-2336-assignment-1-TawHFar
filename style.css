@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 2.0;
+    color:black;
+    background-color: white;
+    padding:5px;
+
+}
+header {
+    background-color: #960C22 ;
+    color:white;
+    padding: 20px;
+    text-align:center;
+    font-size:x-large;
+
+}
+
+h1 img{
+    float:right;
+    margin:5px;
+}
+p{
+    font-size:18px;
+    text-align: center;
+
+}
+
+.grid-1{grid-area: Open;}
+.grid-2{grid-area: Image; } 
+.grid-3{grid-area:Hours;}
+.grid-4{grid-area:location;}
+
+
+.grid{
+    display: grid;
+    grid-template-areas: 'Open Open Image Image'
+    'Hours Hours  location loacation';
+    gap: 20px;
+    padding: 10px;
+
+}
+.grid > div{
+    text-align: center;
+    padding:15px 10px;
+    font-size:18px;
+}
+.about-cafe{grid-area:cafe;}
+.owner{grid-area:owner;}
+.career-form{grid-area:form;}
+.about-page-pic{grid-area:pc;}
+
+.about-grid{
+    display:grid;
+    grid-template-areas: 'cafe cafe cafe cafe cafe''owner owner form form form ' 'owner owner  pc pc pc''owner owner pc pc pc''owner owner pc pc pc';
+    background-color:#FFF9D9;
+}
+.about-grid >div{
+    text-align: center;
+
+}
+.headshot{
+    border-width: 5px;
+    border-radius: 50%;
+}
+h2{
+    font-size:xx-large
+}
+h3{
+    font-size: x-large;
+}
+h4{
+    font-size: larger;
+}
+h5{
+    font-size: larger;
+}
+p#title{
+    font-size: larger;
+
+}
+.contact-input{
+    color:white;
+    font-weight: 500;
+    font-size: 18px;
+    border-radius: 10px;
+    line-height: 22px;
+    border:2px solid #7c7c7c;
+    padding:5px;
+    width: 100%;
+}
+textarea{
+    height:150px;
+    line-height: 150%;
+    resize:vertical;
+}
+form{
+    max-width:400px;
+    margin:10px auto;
+}
+nav ul li{
+    display: inline;
+    margin-right: 30px;
+}
+.topnav{
+    background-color: #960c22;
+    text-align: center;
+}
+.topnav a{
+    color:white;
+    padding: 14px 17px;
+    font-size: 25px;
+}
+
+
+nav a {
+    color:#ece3e5;
+    text-decoration: solid;
+}
+footer{
+    background-color: #960C22 ;
+    color:white;
+    padding: 20px;
+}
